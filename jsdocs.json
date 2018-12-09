@@ -5,7 +5,7 @@
     },
 
     "movenet.getNearbyStops": {
-        "params": [{"name": "location", "struct": {"latitude": "number", "longitude": "number"}}, {"name": "callback", "struct": "function"}],
+        "params": [{"name": "location", "struct": {"latitude": "number", "longitude": "number"}}, {"name": "filter", "struct": {"type": ["postcode/bus/train/metro/tram/ferry/plane/other"]}}, {"name": "callback", "struct": "function"}],
         "return": [{"type": "bus/train/metro/tram/ferry/plane/other", "name": "data", "location": {"latitude": "number", "longitude": "number", "accuracy": "number", "hrname": "string"}}],
         "info": "Gets nearby stops around location."
     }
