@@ -50,7 +50,7 @@ var movenet = (function() {
 
         getNearbyStops: function(location, callback) {
             constructAPIEnding("transportapi", function(ending) {
-                $.getJSON("http://transportapi.com/v3/uk/places.json?lat=" + location.latitude + "&lon=" + location.longitude + "&type=bus_stop" + ending, function(json) {
+                $.getJSON("https://transportapi.com/v3/uk/places.json?lat=" + location.latitude + "&lon=" + location.longitude + "&type=bus_stop" + ending, function(json) {
                     var build = [];    
                     var typeTranslator = {
                         "bus_stop": "bus",
