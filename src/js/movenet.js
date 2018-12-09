@@ -45,7 +45,7 @@ var movenet = (function() {
  * @function movenet.getNearbyStops
  * @params [{"name": "location", "struct": {"latitude": "number", "longitude": "number"}}, {"name": "callback", "struct": "function"}]
  * @return [{"type": "bus/train/metro/tram/ferry/plane/other", "name": "data", "location": {"latitude": "number", "longitude": "number", "accuracy": "number", "hrname": "string"}}]
- * @info Gets data for stop or station.
+ * @info Gets nearby stops around location.
  */
 
         getNearbyStops: function(location, callback) {
