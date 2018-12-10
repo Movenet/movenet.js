@@ -51,7 +51,7 @@ var movenet = (function() {
         getNearbyStops: function(location, filter, callback) {
             constructAPIEnding("transportapi", function(ending) {
                 $.getJSON("https://transportapi.com/v3/uk/places.json?lat=" + location.latitude + "&lon=" + location.longitude + ending, function(json) {
-                    var build = [];    
+                    var build = [];
                     var typeTranslator = {
                         "postcode": "postcode",
                         "bus_stop": "bus",
